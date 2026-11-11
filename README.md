@@ -3,6 +3,8 @@
 **Public, sanitized edition — 11 November 2026**  
 **Scope:** conversational AI with an optional Open WebUI front end. The local architecture is modeled on a multi-container, security-conscious Linux installation; it is **not** an export of anyone's real deployment.
 
+**License:** Written documentation: [CC BY 4.0](LICENSE.md). Original code and configuration examples: [MIT](LICENSE-CODE.md). Third-party projects retain their own licenses.
+
 > **Privacy note:** All paths, labels, loopback ports, and example values here are generic. No real API key, hostname, credential, public IP, VPN relay, model directory, private firewall address, or user's deployment fingerprint is included. Generate your own secrets. Do not publish `docker inspect`, `.env`, secrets, debug logs, or browser API-token screenshots unredacted.
 
 ## Before choosing
@@ -468,3 +470,19 @@ For managing multiple containers, a graphical Docker console can show status, bu
 - NGINX unprivileged image: https://github.com/nginx/docker-nginx-unprivileged
 
 **Confidence:** High in the architectural distinctions and documented configuration interfaces; moderate in cross-hardware portability. The local Compose example has been reviewed for consistency, **not end-to-end executed on a newly provisioned host**. Treat it as an implementation template and validate each checkpoint.
+
+---
+
+# License and reuse
+
+This project is intentionally **dual-licensed by material type**:
+
+| Material | License |
+|---|---|
+| Original guide prose, tables, and explanatory diagrams | [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE.md) |
+| Original shell commands, scripts, Docker Compose YAML, NGINX config, and other code/configuration examples | [MIT License](LICENSE-CODE.md) |
+| Third-party images, tools, dependencies, model weights, documentation, and trademarks | Their respective upstream licenses and terms |
+
+**Suggested documentation attribution:** “Phoenix AI Setup Guide” by [@myork66](https://github.com/myork66), licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Source: https://github.com/myork66/phoenix-ai-setup-guide. Indicate if you made changes.
+
+For code/configuration reuse, preserve the MIT copyright and license notice as required by [LICENSE-CODE.md](LICENSE-CODE.md). License grants extend only to material contributors have authority to license; publication does not relicense third-party software or model files.
